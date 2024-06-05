@@ -2,8 +2,8 @@ from processsamento_dados import Dados
 
 #Extract
 
-path_json = 'data_raw/dados_empresaA.json'
-path_csv = 'data_raw/dados_empresaB.csv'
+path_json = "../data_raw/dados_empresaA.json"
+path_csv = "../data_raw/dados_empresaB.csv"
 
 dados_empresaA = Dados.leituras_dados(path_json, 'json')
 print('\n')
@@ -34,7 +34,7 @@ print(f'Quantidade de linhas do arquivo após a fusao de empresas {dados_fusao.q
 
 #Load
 
-path_dados_combinados = 'data_processed/dados_combinados.csv'
+path_dados_combinados = '../data_processed/dados_combinados.csv'
 
 dados_fusao.salvando_dados(path_dados_combinados)
 print(f'Caminho do local onde o arquivo das empresas fundidas se encontra : {path_dados_combinados}\n')
